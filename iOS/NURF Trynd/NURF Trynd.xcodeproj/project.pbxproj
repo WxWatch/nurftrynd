@@ -13,7 +13,6 @@
 		6CE3735C1ACC55DB00D57565 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CE3735A1ACC55DB00D57565 /* Main.storyboard */; };
 		6CE3735E1ACC55DB00D57565 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CE3735D1ACC55DB00D57565 /* Images.xcassets */; };
 		6CE373611ACC55DB00D57565 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CE3735F1ACC55DB00D57565 /* LaunchScreen.xib */; };
-		6CE3736D1ACC55DB00D57565 /* NURF_TryndTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CE3736C1ACC55DB00D57565 /* NURF_TryndTests.m */; };
 		6CE3737F1ACC56F600D57565 /* JVFloatingDrawerSpringAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CE3737A1ACC56F600D57565 /* JVFloatingDrawerSpringAnimator.m */; };
 		6CE373801ACC56F600D57565 /* JVFloatingDrawerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CE3737C1ACC56F600D57565 /* JVFloatingDrawerView.m */; };
 		6CE373811ACC56F600D57565 /* JVFloatingDrawerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CE3737E1ACC56F600D57565 /* JVFloatingDrawerViewController.m */; };
@@ -42,8 +41,6 @@
 		6CE3735D1ACC55DB00D57565 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6CE373601ACC55DB00D57565 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		6CE373661ACC55DB00D57565 /* NURF TryndTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NURF TryndTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6CE3736B1ACC55DB00D57565 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6CE3736C1ACC55DB00D57565 /* NURF_TryndTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NURF_TryndTests.m; sourceTree = "<group>"; };
 		6CE373781ACC56F600D57565 /* JVFloatingDrawerAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JVFloatingDrawerAnimation.h; sourceTree = "<group>"; };
 		6CE373791ACC56F600D57565 /* JVFloatingDrawerSpringAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JVFloatingDrawerSpringAnimator.h; sourceTree = "<group>"; };
 		6CE3737A1ACC56F600D57565 /* JVFloatingDrawerSpringAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JVFloatingDrawerSpringAnimator.m; sourceTree = "<group>"; };
@@ -77,7 +74,6 @@
 			isa = PBXGroup;
 			children = (
 				6CE3734F1ACC55DB00D57565 /* NURF Trynd */,
-				6CE373691ACC55DB00D57565 /* NURF TryndTests */,
 				6CE3734E1ACC55DB00D57565 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -114,23 +110,6 @@
 			children = (
 				6CE373511ACC55DB00D57565 /* Info.plist */,
 				6CE373521ACC55DB00D57565 /* main.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		6CE373691ACC55DB00D57565 /* NURF TryndTests */ = {
-			isa = PBXGroup;
-			children = (
-				6CE3736C1ACC55DB00D57565 /* NURF_TryndTests.m */,
-				6CE3736A1ACC55DB00D57565 /* Supporting Files */,
-			);
-			path = "NURF TryndTests";
-			sourceTree = "<group>";
-		};
-		6CE3736A1ACC55DB00D57565 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				6CE3736B1ACC55DB00D57565 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -271,7 +250,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6CE3736D1ACC55DB00D57565 /* NURF_TryndTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,6 +434,7 @@
 				6CE373721ACC55DB00D57565 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6CE373731ACC55DB00D57565 /* Build configuration list for PBXNativeTarget "NURF TryndTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +443,7 @@
 				6CE373751ACC55DB00D57565 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
