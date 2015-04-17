@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6CCDA8C91AE157DF0034884E /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CCDA8C81AE157DF0034884E /* MenuViewController.m */; };
+		6CCDA8CC1AE159E80034884E /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CCDA8CB1AE159E80034884E /* TabBarViewController.m */; };
+		6CCDA8CF1AE15A650034884E /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CCDA8CE1AE15A650034884E /* BaseViewController.m */; };
+		6CCDA8D51AE15E830034884E /* Region.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CCDA8D41AE15E820034884E /* Region.m */; };
+		6CCDA8D71AE15EA40034884E /* Regions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6CCDA8D61AE15EA40034884E /* Regions.plist */; };
 		6CE373531ACC55DB00D57565 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CE373521ACC55DB00D57565 /* main.m */; };
 		6CE373561ACC55DB00D57565 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CE373551ACC55DB00D57565 /* AppDelegate.m */; };
 		6CE373591ACC55DB00D57565 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CE373581ACC55DB00D57565 /* ViewController.m */; };
@@ -19,17 +24,16 @@
 		6CE373841ACC57D400D57565 /* TrendingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CE373831ACC57D400D57565 /* TrendingViewController.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		6CE373671ACC55DB00D57565 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6CE373451ACC55DB00D57565 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6CE3734C1ACC55DB00D57565;
-			remoteInfo = "NURF Trynd";
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		6CCDA8C71AE157DF0034884E /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		6CCDA8C81AE157DF0034884E /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		6CCDA8CA1AE159E80034884E /* TabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarViewController.h; sourceTree = "<group>"; };
+		6CCDA8CB1AE159E80034884E /* TabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarViewController.m; sourceTree = "<group>"; };
+		6CCDA8CD1AE15A650034884E /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		6CCDA8CE1AE15A650034884E /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		6CCDA8D31AE15E820034884E /* Region.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Region.h; sourceTree = "<group>"; };
+		6CCDA8D41AE15E820034884E /* Region.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Region.m; sourceTree = "<group>"; };
+		6CCDA8D61AE15EA40034884E /* Regions.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Regions.plist; sourceTree = "<group>"; };
 		6CE3734D1ACC55DB00D57565 /* NURF Trynd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NURF Trynd.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CE373511ACC55DB00D57565 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6CE373521ACC55DB00D57565 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,7 +44,6 @@
 		6CE3735B1ACC55DB00D57565 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6CE3735D1ACC55DB00D57565 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6CE373601ACC55DB00D57565 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		6CE373661ACC55DB00D57565 /* NURF TryndTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NURF TryndTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CE373781ACC56F600D57565 /* JVFloatingDrawerAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JVFloatingDrawerAnimation.h; sourceTree = "<group>"; };
 		6CE373791ACC56F600D57565 /* JVFloatingDrawerSpringAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JVFloatingDrawerSpringAnimator.h; sourceTree = "<group>"; };
 		6CE3737A1ACC56F600D57565 /* JVFloatingDrawerSpringAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JVFloatingDrawerSpringAnimator.m; sourceTree = "<group>"; };
@@ -60,16 +63,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6CE373631ACC55DB00D57565 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6CCDA8D01AE15C210034884E /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		6CCDA8D21AE15E720034884E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6CCDA8D31AE15E820034884E /* Region.h */,
+				6CCDA8D41AE15E820034884E /* Region.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		6CE373441ACC55DB00D57565 = {
 			isa = PBXGroup;
 			children = (
@@ -82,7 +94,6 @@
 			isa = PBXGroup;
 			children = (
 				6CE3734D1ACC55DB00D57565 /* NURF Trynd.app */,
-				6CE373661ACC55DB00D57565 /* NURF TryndTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -90,13 +101,21 @@
 		6CE3734F1ACC55DB00D57565 /* NURF Trynd */ = {
 			isa = PBXGroup;
 			children = (
+				6CCDA8D21AE15E720034884E /* Model */,
+				6CCDA8D01AE15C210034884E /* Cells */,
 				6CE373761ACC56F600D57565 /* ThirdParty */,
 				6CE373541ACC55DB00D57565 /* AppDelegate.h */,
 				6CE373551ACC55DB00D57565 /* AppDelegate.m */,
+				6CCDA8CD1AE15A650034884E /* BaseViewController.h */,
+				6CCDA8CE1AE15A650034884E /* BaseViewController.m */,
 				6CE373571ACC55DB00D57565 /* ViewController.h */,
 				6CE373581ACC55DB00D57565 /* ViewController.m */,
+				6CCDA8C71AE157DF0034884E /* MenuViewController.h */,
+				6CCDA8C81AE157DF0034884E /* MenuViewController.m */,
 				6CE373821ACC57D400D57565 /* TrendingViewController.h */,
 				6CE373831ACC57D400D57565 /* TrendingViewController.m */,
+				6CCDA8CA1AE159E80034884E /* TabBarViewController.h */,
+				6CCDA8CB1AE159E80034884E /* TabBarViewController.m */,
 				6CE3735A1ACC55DB00D57565 /* Main.storyboard */,
 				6CE3735D1ACC55DB00D57565 /* Images.xcassets */,
 				6CE3735F1ACC55DB00D57565 /* LaunchScreen.xib */,
@@ -110,6 +129,7 @@
 			children = (
 				6CE373511ACC55DB00D57565 /* Info.plist */,
 				6CE373521ACC55DB00D57565 /* main.m */,
+				6CCDA8D61AE15EA40034884E /* Regions.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -156,24 +176,6 @@
 			productReference = 6CE3734D1ACC55DB00D57565 /* NURF Trynd.app */;
 			productType = "com.apple.product-type.application";
 		};
-		6CE373651ACC55DB00D57565 /* NURF TryndTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 6CE373731ACC55DB00D57565 /* Build configuration list for PBXNativeTarget "NURF TryndTests" */;
-			buildPhases = (
-				6CE373621ACC55DB00D57565 /* Sources */,
-				6CE373631ACC55DB00D57565 /* Frameworks */,
-				6CE373641ACC55DB00D57565 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				6CE373681ACC55DB00D57565 /* PBXTargetDependency */,
-			);
-			name = "NURF TryndTests";
-			productName = "NURF TryndTests";
-			productReference = 6CE373661ACC55DB00D57565 /* NURF TryndTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -185,10 +187,6 @@
 				TargetAttributes = {
 					6CE3734C1ACC55DB00D57565 = {
 						CreatedOnToolsVersion = 6.2;
-					};
-					6CE373651ACC55DB00D57565 = {
-						CreatedOnToolsVersion = 6.2;
-						TestTargetID = 6CE3734C1ACC55DB00D57565;
 					};
 				};
 			};
@@ -206,7 +204,6 @@
 			projectRoot = "";
 			targets = (
 				6CE3734C1ACC55DB00D57565 /* NURF Trynd */,
-				6CE373651ACC55DB00D57565 /* NURF TryndTests */,
 			);
 		};
 /* End PBXProject section */
@@ -218,14 +215,8 @@
 			files = (
 				6CE3735C1ACC55DB00D57565 /* Main.storyboard in Resources */,
 				6CE373611ACC55DB00D57565 /* LaunchScreen.xib in Resources */,
+				6CCDA8D71AE15EA40034884E /* Regions.plist in Resources */,
 				6CE3735E1ACC55DB00D57565 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6CE373641ACC55DB00D57565 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,31 +228,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				6CE373841ACC57D400D57565 /* TrendingViewController.m in Sources */,
+				6CCDA8CF1AE15A650034884E /* BaseViewController.m in Sources */,
 				6CE3737F1ACC56F600D57565 /* JVFloatingDrawerSpringAnimator.m in Sources */,
+				6CCDA8D51AE15E830034884E /* Region.m in Sources */,
 				6CE373591ACC55DB00D57565 /* ViewController.m in Sources */,
+				6CCDA8C91AE157DF0034884E /* MenuViewController.m in Sources */,
 				6CE373811ACC56F600D57565 /* JVFloatingDrawerViewController.m in Sources */,
 				6CE373561ACC55DB00D57565 /* AppDelegate.m in Sources */,
 				6CE373801ACC56F600D57565 /* JVFloatingDrawerView.m in Sources */,
+				6CCDA8CC1AE159E80034884E /* TabBarViewController.m in Sources */,
 				6CE373531ACC55DB00D57565 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6CE373621ACC55DB00D57565 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		6CE373681ACC55DB00D57565 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 6CE3734C1ACC55DB00D57565 /* NURF Trynd */;
-			targetProxy = 6CE373671ACC55DB00D57565 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		6CE3735A1ACC55DB00D57565 /* Main.storyboard */ = {
@@ -381,40 +361,6 @@
 			};
 			name = Release;
 		};
-		6CE373741ACC55DB00D57565 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "NURF TryndTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NURF Trynd.app/NURF Trynd";
-			};
-			name = Debug;
-		};
-		6CE373751ACC55DB00D57565 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "NURF TryndTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NURF Trynd.app/NURF Trynd";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -432,15 +378,6 @@
 			buildConfigurations = (
 				6CE373711ACC55DB00D57565 /* Debug */,
 				6CE373721ACC55DB00D57565 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		6CE373731ACC55DB00D57565 /* Build configuration list for PBXNativeTarget "NURF TryndTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6CE373741ACC55DB00D57565 /* Debug */,
-				6CE373751ACC55DB00D57565 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

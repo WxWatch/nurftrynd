@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>Brazil</string>
+		<key>abbreviation</key>
+		<string>br</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Europe Nordic East</string>
+		<key>abbreviation</key>
+		<string>euw</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Europe West</string>
+		<key>abbreviation</key>
+		<string>euw</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Korea</string>
+		<key>abbreviation</key>
+		<string>kr</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Latin America North</string>
+		<key>abbreviation</key>
+		<string>lan</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Latin America South</string>
+		<key>abbreviation</key>
+		<string>las</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>North America</string>
+		<key>abbreviation</key>
+		<string>na</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Oceania</string>
+		<key>abbreviation</key>
+		<string>oce</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Russia</string>
+		<key>abbreviation</key>
+		<string>ru</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Turkey</string>
+		<key>abbreviation</key>
+		<string>tr</string>
+	</dict>
+</array>
+</plist>

@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "Region.h"
+
+#define kNotificationRegionChanged @"kNotificatonRegionChanged"
 
 @interface AppDelegate ()
 
@@ -14,9 +17,39 @@
 
 @implementation AppDelegate
 
++ (instancetype)sharedDelegate {
+    return (AppDelegate*)[[UIApplication sharedApplication] delegate];
+}
+
+- (void)setSelectedRegion:(Region *)selectedRegion {
+    _selectedRegion = selectedRegion;
+    [[NSNotificationCenter defaultCenter] postNotificationName:kNotificationRegionChanged object:nil];
+}
+
+- (void)populateRegions {
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"Regions" ofType:@"plist"];
+    NSArray *regionArray = [NSArray arrayWithContentsOfFile:filePath];
+    NSMutableArray *tempRegionArray = [NSMutableArray new];
+    for (NSDictionary *regionDict in regionArray) {
+        Region *region = [Region regionWithDict:regionDict];
+        [tempRegionArray addObject:region];
+    }
+    
+    self.regions = [tempRegionArray sortedArrayUsingComparator:^NSComparisonResult(Region *obj1, Region *obj2) {
+        NSString *abbr1 = obj1.abbreviation;
+        NSString *abbr2 = obj2.abbreviation;
+        
+        return [abbr1 compare:abbr2];
+    }];
+}
+
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    // Populate regions
+    [self populateRegions];
+    
     return YES;
 }
 

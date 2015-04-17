@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "TrendingViewController.h"
 #import "JVFloatingDrawerSpringAnimator.h"
+#import "AppDelegate.h"
 
 @interface ViewController ()
 
@@ -23,9 +24,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    self.leftViewController = [UIViewController new];
-    self.centerViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"TrendingViewController"];
+    [AppDelegate sharedDelegate].drawerViewController = self;
+    
+    self.leftViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"MenuViewController"];
+    self.centerViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"TabBarViewController"];
     self.animator = [JVFloatingDrawerSpringAnimator new];
+    
+    self.backgroundImage = [UIImage imageNamed:@"transferback"];
     
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"|||" style:UIBarButtonItemStylePlain target:self action:@selector(toggleMenu)];
 }

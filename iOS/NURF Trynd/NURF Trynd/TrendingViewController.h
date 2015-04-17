@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseViewController.h"
 
-@interface TrendingViewController : UIViewController
+@interface TrendingViewController : BaseViewController
 
 @end
