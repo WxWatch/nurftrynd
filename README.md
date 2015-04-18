@@ -34,7 +34,7 @@ The **relevant-files** folder is a subset of the **lolmobile** folder that conta
 
 The **iOS** folder contains all the code to build and run the iOS application.
 
-The **lolmobile** folder contains all the files to run the website.
+The **lolmobile** folder contains all the files to run the website. You should be able to upload to a webserver (or a localhost WAMP/MAMP/Webserver/etc. and then just hit http://localhost(or whatever)/urftrynd/ and it should work. My web server is set up a little awkwardly, so YMMW. I'll make sure to leave my site unchanged at http://lolmobile.net/urftrynd/ until after judging is over, just in case.
 
 **james_lolmobile.sql** and **james_lolmobile.xml** are just two different ways of representing the database schema used. The databases, in general, try to contain only was was necessary for the project, for time and resource purposes.
 
