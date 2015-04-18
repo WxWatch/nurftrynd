@@ -7,7 +7,9 @@ URF Trynd is the combination of a simple webpage, an API, and an iOS app to disp
 
 # Where can I see it?
 The webpage can be found at http://lolmobile.net/urftrynd/
+
 The API endpoints are contained at http://lolmobile.net/challenge/api/v1/played and http://lolmobile.net/challenge/api/v1/banned
+
 The iOS application video can be viewed [here](http://youtube.com)
 
 # API Details
@@ -18,10 +20,11 @@ Specifying no region will return results for every region combined (e.g. World)
 
 # So...what's next?
 There are many possibilities for next steps with this suite of applications and tools. Some of the more interesting ones are:
-- URF/t: Visualizations of champion popularity as URF mode progressed through its lifetime. When did the OP picks REALLY start getting picked?
-- URF Shop: Which items were being built the most? Which items just weren't popular in URF?
-- URF Stat Shockers: Which champions dealt the most DPS? Who was the king (or queen) (or banana queen) of healing? Who was the URF mega-damage-sponge?
+- *URF/t*: Visualizations of champion popularity as URF mode progressed through its lifetime. When did the OP picks REALLY start getting picked?
+- **URF Shopping Spree**: Which items were being built the most? Which items just weren't popular in URF?
+- ***URF Stat Shockers***: Which champions dealt the most DPS? Who was the king (or queen) (or banana queen) of healing? Who was the URF mega-damage-sponge?
 - Many, many, many more than my mind could even comprehend.
 
 © James Glenn, 2015.
+
 URF Trynd/LoL Mobile isn't endorsed by Riot Games and doesn't reflect the views or opinions of Riot Games or anyone officially involved in producing or managing League of Legends. League of Legends and Riot Games are trademarks or registered trademarks of Riot Games, Inc. League of Legends © Riot Games, Inc.
