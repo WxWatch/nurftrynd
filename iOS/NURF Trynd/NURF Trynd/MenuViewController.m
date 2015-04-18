@@ -19,33 +19,48 @@
 
 #pragma mark - UITableView Delegate/DataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.regions.count;
+    return self.regions.count + 1;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"RegionTableViewCell" forIndexPath:indexPath];
     
-    Region *region = self.regions[indexPath.row];
-    cell.textLabel.text = [NSString stringWithFormat:@"%@ (%@)", region.name, region.abbreviation.uppercaseString];
-    
-    if (region == [AppDelegate sharedDelegate].selectedRegion) {
-        cell.textLabel.textColor = [UIColor redColor];
+    if (indexPath.row == 0) {
+        cell.textLabel.text = @"World";
+        
+        if (![AppDelegate sharedDelegate].selectedRegion) {
+            cell.textLabel.textColor = [UIColor redColor];
+        } else {
+            cell.textLabel.textColor = [UIColor whiteColor];
+        }
     } else {
-        cell.textLabel.textColor = [UIColor whiteColor];
+        Region *region = self.regions[indexPath.row - 1];
+        cell.textLabel.text = [NSString stringWithFormat:@"%@ (%@)", region.name, region.abbreviation.uppercaseString];
+        
+        if (region == [AppDelegate sharedDelegate].selectedRegion) {
+            cell.textLabel.textColor = [UIColor redColor];
+        } else {
+            cell.textLabel.textColor = [UIColor whiteColor];
+        }
     }
-
     
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    Region *region = self.regions[indexPath.row];
     
-    [AppDelegate sharedDelegate].selectedRegion = region;
+    if (indexPath.row == 0) {
+        [AppDelegate sharedDelegate].selectedRegion = nil;
+    } else {
+        Region *region = self.regions[indexPath.row-1];
+        [AppDelegate sharedDelegate].selectedRegion = region;
+    }
+    
     [tableView reloadData];
     
     [[AppDelegate sharedDelegate].drawerViewController closeDrawerWithSide:JVFloatingDrawerSideLeft animated:YES completion:nil];
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"RegionSelected" object:nil];
 }
 
 - (void)viewDidLoad {

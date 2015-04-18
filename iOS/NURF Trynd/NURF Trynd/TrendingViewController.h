@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "BaseViewController.h"
+#import "BaseTableViewController.h"
 
-@interface TrendingViewController : BaseViewController
+@interface TrendingViewController : BaseTableViewController
 
 @end

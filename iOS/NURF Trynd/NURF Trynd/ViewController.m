@@ -32,7 +32,7 @@
     
     self.backgroundImage = [UIImage imageNamed:@"transferback"];
     
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"|||" style:UIBarButtonItemStylePlain target:self action:@selector(toggleMenu)];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Region" style:UIBarButtonItemStylePlain target:self action:@selector(toggleMenu)];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -8,6 +8,9 @@
 
 #import "AppDelegate.h"
 #import "Region.h"
+#import "AFNetworking.h"
+#import <Realm/Realm.h>
+#import "Champion.h"
 
 #define kNotificationRegionChanged @"kNotificatonRegionChanged"
 
@@ -47,8 +50,47 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
+    // Setup appearance
+    [[UINavigationBar appearance] setBarStyle:UIBarStyleBlack];
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+    [[UITabBar appearance] setBarStyle:UIBarStyleBlack];
+    [[UITabBar appearance] setTintColor:[UIColor whiteColor]];
+    
     // Populate regions
     [self populateRegions];
+    
+    
+//    //Used to populate the championinfo realm the first time :D
+//    AFHTTPRequestOperationManager *mang = [[AFHTTPRequestOperationManager alloc] initWithBaseURL:[NSURL URLWithString:@"https://global.api.pvp.net/"]];
+//    mang.operationQueue = [[NSOperationQueue alloc] init];
+//    mang.requestSerializer = [AFJSONRequestSerializer serializer];
+//    mang.responseSerializer = [AFJSONResponseSerializer serializer];
+//    
+//    NSString *url = @"https://global.api.pvp.net/api/lol/static-data/na/v1.2/champion";
+//    NSDictionary *params = @{ @"champData": @"image",
+//                              @"api_key": @"KEY" };
+//    NSError *error;
+//    NSMutableURLRequest *request = [mang.requestSerializer requestWithMethod:@"GET" URLString:url parameters:params error:&error];
+//    
+//    AFHTTPRequestOperation *operation = [mang HTTPRequestOperationWithRequest:request success:^(AFHTTPRequestOperation *operation, id responseObject) {
+//        NSLog(@"Success");
+//        NSArray *champs = [responseObject[@"data"] allValues];
+//        NSLog(@"%@", champs);
+//        
+//        RLMRealm *realm = [RLMRealm defaultRealm];
+//        [realm beginWriteTransaction];
+//        for (NSDictionary *champ in champs) {
+//            [Champion createInDefaultRealmWithObject:champ];
+//        }
+//        [realm commitWriteTransaction];
+//
+//        
+//    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+//        NSLog(@"Failure");
+//    }];
+//    
+//    [mang.operationQueue addOperation:operation];
+    
     
     return YES;
 }
