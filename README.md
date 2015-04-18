@@ -28,6 +28,18 @@ There are many possibilities for next steps with this suite of applications and 
 # Additional Info
 Note that a lot of configuration (passwords, database names, API keys, etc) have been scrubbed out of the corresponding files for security purposes.
 
+The **cronscripts** folder contains PHP scripts that were run as cronjobs, for data collection/parsing etc.
+
+The **relevant-files** folder is a subset of the **lolmobile** folder that contains most (if not all) of the relevant files we touched to create the website.
+
+The **iOS** folder contains all the code to build and run the iOS application.
+
+The **lolmobile** folder contains all the files to run the website.
+
+**james_lolmobile.sql** and **james_lolmobile.xml** are just two different ways of representing the database schema used. The databases, in general, try to contain only was was necessary for the project, for time and resource purposes.
+
+-----------------
+
 © James Glenn, 2015.
 
 URF Trynd/LoL Mobile isn't endorsed by Riot Games and doesn't reflect the views or opinions of Riot Games or anyone officially involved in producing or managing League of Legends. League of Legends and Riot Games are trademarks or registered trademarks of Riot Games, Inc. League of Legends © Riot Games, Inc.
