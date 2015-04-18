@@ -1,6 +1,6 @@
 # Introduction
 
-URF Trynd is a way to view player perception of champion strength in URF mode. It accomplishes this by allowing the user to see trynds in which champions are being picked, which are being banned, and which are neither. At first, this project attempted to show the URF-meta, however, the URF-meta always consisted of 100% pick rates for Urf the Manatee, who never lost a single game, therefore we altered our project to show Trynds in URF.
+URF Trynd is a way to view player perception of champion strength in URF mode. It accomplishes this by allowing the user to see trends in which champions are being picked, which are being banned, and which are neither. At first, this project attempted to show the URF-meta, however, the URF-meta always consisted of 100% pick rates for Urf the Manatee, who never lost a single game. While this URF-meta is very important to the League of Legends ecosystem, we chose to slightly alter our project.
 
 # So...what is this?
 URF Trynd is the combination of a simple webpage, an API, and an iOS app to display URF data, specifically champion pick and ban rate.
@@ -8,13 +8,13 @@ URF Trynd is the combination of a simple webpage, an API, and an iOS app to disp
 # Where can I see it?
 The webpage can be found at http://lolmobile.net/urftrynd/
 
-The API endpoints are contained at http://lolmobile.net/challenge/api/v1/played and http://lolmobile.net/challenge/api/v1/banned
+The API endpoints are contained at http://lolmobile.net/challenge/api/v1/champions/played and http://lolmobile.net/challenge/api/v1/champions/banned
 
 The iOS application video can be viewed/downloaded [here](http://lolmobile.net/cdn/urftrynd_demo.mov)
 
 # API Details
 For simplicity (and time-sake), the endpoints accept one 'region' parameter, which accepts any valid League of Legends region.
-e.g. http://lolmobile.net/challenge/api/v1/played?region=na
+e.g. http://lolmobile.net/challenge/api/v1/champions/played?region=na
 
 Specifying no region will return results for every region combined (e.g. World)
 
@@ -24,6 +24,9 @@ There are many possibilities for next steps with this suite of applications and 
 - **URF Shopping Spree**: Which items were being built the most? Which items just weren't popular in URF?
 - **URF Stat Shockers**: Which champions dealt the most DPS? Who was the king (or queen) (or banana queen) of healing? Who was the URF mega-damage-sponge?
 - Many, many, many more than my mind could even comprehend.
+
+# Additional Info
+Note that a lot of configuration (passwords, database names, API keys, etc) have been scrubbed out of the corresponding files for security purposes.
 
 © James Glenn, 2015.
 
