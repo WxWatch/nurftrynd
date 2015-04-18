@@ -10,7 +10,7 @@ The webpage can be found at http://lolmobile.net/urftrynd/
 
 The API endpoints are contained at http://lolmobile.net/challenge/api/v1/played and http://lolmobile.net/challenge/api/v1/banned
 
-The iOS application video can be viewed [here](http://youtube.com)
+The iOS application video can be viewed/downloaded [here](http://lolmobile.net/cdn/urftrynd_demo.mov)
 
 # API Details
 For simplicity (and time-sake), the endpoints accept one 'region' parameter, which accepts any valid League of Legends region.
@@ -20,9 +20,9 @@ Specifying no region will return results for every region combined (e.g. World)
 
 # So...what's next?
 There are many possibilities for next steps with this suite of applications and tools. Some of the more interesting ones are:
-- *URF/t*: Visualizations of champion popularity as URF mode progressed through its lifetime. When did the OP picks REALLY start getting picked?
+- **URF/t**: Visualizations of champion popularity as URF mode progressed through its lifetime. When did the OP picks REALLY start getting picked?
 - **URF Shopping Spree**: Which items were being built the most? Which items just weren't popular in URF?
-- ***URF Stat Shockers***: Which champions dealt the most DPS? Who was the king (or queen) (or banana queen) of healing? Who was the URF mega-damage-sponge?
+- **URF Stat Shockers**: Which champions dealt the most DPS? Who was the king (or queen) (or banana queen) of healing? Who was the URF mega-damage-sponge?
 - Many, many, many more than my mind could even comprehend.
 
 © James Glenn, 2015.
